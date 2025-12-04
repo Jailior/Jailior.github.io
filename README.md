@@ -1,2 +1,3 @@
-# Personal portfolio website.
-Work in progress.
+# Personal portfolio website
+
+[Click here](https://jailior.github.io/) to view it!
