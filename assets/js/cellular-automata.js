@@ -12,7 +12,7 @@
     const RED_OPACITY = 0.6; // Red automata opacity
     const UPDATE_INTERVAL = 100; // Milliseconds between Game of Life updates
     const RED_FADE_STEPS = 15; // Number of steps for red cells to fade out
-    const RED_USE_GAME_OF_LIFE = false; // Set to true for Conway's Game of Life, false for fading automata
+    let RED_USE_GAME_OF_LIFE = false; // Set to true for Conway's Game of Life, false for fading automata (toggleable via clicking "games")
 
     let canvas, ctx;
     let width, height;
@@ -402,6 +402,16 @@
             const mediaQuery = window.matchMedia('(max-width: 1280px)');
             mediaQuery.addListener(function() {
                 setTimeout(resizeCanvas, 100);
+            });
+        }
+
+        // Toggle red automata mode when clicking "games"
+        const gamesToggle = document.getElementById('games-toggle');
+        if (gamesToggle) {
+            gamesToggle.addEventListener('click', function() {
+                RED_USE_GAME_OF_LIFE = !RED_USE_GAME_OF_LIFE;
+                // Reinitialize grid to switch modes
+                initializeGrid();
             });
         }
     }
