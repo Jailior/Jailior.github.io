@@ -2605,6 +2605,7 @@ input, select, textarea {
 		text-align: right;
 		top: 0;
 		width: 35%;
+		z-index: 2;
 	}
 
 		#header > * {
@@ -2699,6 +2700,24 @@ input, select, textarea {
 				margin-top: 0;
 				padding-top: 0;
 			}
+
+/* Cellular Automata Canvas */
+
+	#cellular-automata-canvas {
+		position: fixed;
+		top: 0;
+		left: 35%;
+		width: calc(100% - 35%);
+		height: 100%;
+		z-index: 0;
+		pointer-events: none;
+		opacity: 1;
+	}
+
+	#main {
+		position: relative;
+		z-index: 1;
+	}
 
 /* Poptrox */
 
@@ -3032,6 +3051,13 @@ input, select, textarea {
 				width: calc(100% - 30%);
 			}
 
+		/* Cellular Automata Canvas */
+
+			#cellular-automata-canvas {
+				left: 30%;
+				width: calc(100% - 30%);
+			}
+
 	}
 
 /* Medium */
@@ -3111,6 +3137,13 @@ input, select, textarea {
 			#main {
 				margin: 0;
 				padding: 6em 4em;
+				width: 100%;
+			}
+
+		/* Cellular Automata Canvas */
+
+			#cellular-automata-canvas {
+				left: 0;
 				width: 100%;
 			}
 
