@@ -2704,7 +2704,7 @@ input, select, textarea {
 /* Cellular Automata Canvas */
 
 	#cellular-automata-canvas {
-		position: fixed;
+		position: absolute;
 		top: 0;
 		left: 35%;
 		width: calc(100% - 35%);
