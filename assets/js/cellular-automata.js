@@ -325,7 +325,8 @@
         // Draw red cells based on mode
         if (RED_USE_GAME_OF_LIFE) {
             // Draw red Game of Life cells
-            ctx.fillStyle = `rgba(255, 0, 0, ${RED_OPACITY})`;
+            // ctx.fillStyle = `rgba(255, 0, 0, ${RED_OPACITY})`; // red
+            ctx.fillStyle = `rgba(162, 162, 162, ${RED_OPACITY})`; // grey
             for (let y = 0; y < rows; y++) {
                 for (let x = 0; x < cols; x++) {
                     if (redGrid[y][x] === 1) {
@@ -338,7 +339,8 @@
             redCells.forEach((cell, key) => {
                 const [x, y] = key.split(',').map(Number);
                 const alpha = (1 - cell.age / cell.maxAge) * RED_OPACITY;
-                ctx.fillStyle = `rgba(255, 0, 0, ${alpha})`;
+                // ctx.fillStyle = `rgba(255, 0, 0, ${alpha})`; // red                
+                ctx.fillStyle = `rgba(162, 162, 162, ${alpha})`; // grey
                 ctx.fillRect(x * CELL_SIZE, y * CELL_SIZE, CELL_SIZE, CELL_SIZE);
             });
         }
