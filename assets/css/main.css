@@ -254,17 +254,17 @@ input, select, textarea {
 	}
 
 		.terminal-intro .terminal-prompt {
-			color: #00ff88;
-			display: inline;
-		}
-
-		.terminal-intro .terminal-text {
 			color: #00ffff;
 			display: inline;
 		}
 
+		.terminal-intro .terminal-text {
+			color: #ffffff;
+			display: inline;
+		}
+
 		.terminal-intro .terminal-cursor {
-			background: #00ffff;
+			background: #ffffff;
 			display: inline-block;
 			height: 1.2em;
 			margin-left: 0.2em;
