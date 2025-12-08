@@ -10,18 +10,18 @@
 	<body class="is-preload">
 
 		<!-- Cellular Automata Canvas -->
-		<canvas id="cellular-automata-canvas"></canvas>
+		<!-- <canvas id="cellular-automata-canvas"></canvas> -->
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1>
-						<strong>I'm Ali</strong>, CE Student @ UBC<br />
-					</h1>
-					<h1>
-						I like building cool things<br />
-				    </h1>
+					<h4 class="terminal-text-static">
+						<strong>I'm Ali</strong>, CE Student @ UBC
+					</h4>
+					<h4 class="terminal-text-static">
+						I like building cool things
+				    </h4>
 				</div>
 			</header>
 
@@ -31,54 +31,57 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Welcome to my Portfolio!</h2>
+							<h2 class="terminal-text-static"><strong>Welcome to my Portfolio!</strong></h2>
 						</header>
-						<p>I am a computer engineering student at the University of British Columbia 
+						<div class="terminal-intro" id="terminal-intro">
+							<span class="terminal-prompt">$ </span><span class="terminal-text" id="terminal-text"></span><span class="terminal-cursor blink" id="terminal-cursor"></span>
+						</div>
+						<p style="display: none;" id="intro-original">I am a computer engineering student at the University of British Columbia 
 							and I have a passion for software and firmware development. I like building projects in
 							 software, machine learning, computer architecture, <span id="games-toggle" style="cursor: pointer; text-decoration: underline;">games</span> and embedded systems.</p>
 					</section>
 
 				<!-- Two -->
 					<section id="two">
-						<h2>Recent Projects</h2>
+						<h2 class="terminal-text-static"><strong>Recent Projects</strong></h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/thumbs/open-search-image.png" class="image fit thumb"><img src="images/thumbs/open-search-image.png" alt="" /></a>
-								<h3><a href="https://opensearchengine.app/">OpenSearch</a></h3>
-								<p>A distributed web search engine that follows the Google search architecture including crawling, indexing and querying.</p>
+								<h3 class="terminal-text-static"><a href="https://opensearchengine.app/">OpenSearch</a></h3>
+								<p class="terminal-text-static">A distributed web search engine that follows the Google search architecture including crawling, indexing and querying.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/thumbs/door-sense-gui-image.png" class="image fit thumb"><img src="images/thumbs/door-sense-gui-image.png" alt="" /></a>
-								<h3><a href="https://github.com/Jailior/DoorSense">Door Monitoring System</a></h3>
-								<p>Using an ESP32-CAM module to monitor an image frame and perform edge detection where readings streamed via TCP to a C++ server.</p>
+								<h3 class="terminal-text-static"><a href="https://github.com/Jailior/DoorSense">Door Monitoring System</a></h3>
+								<p class="terminal-text-static">Using an ESP32-CAM module to monitor an image frame and perform edge detection where readings streamed via TCP to a C++ server.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/thumbs/glow-patch-embeddings.png" class="image fit thumb"><img src="images/thumbs/glow-patch-embeddings.png" alt="" /></a>
-								<h3><a href="https://github.com/asalee01/Glow-patch">Nighttime Pothole Detection</a></h3>
-								<p>We present a baseline object detector using YOLO and fine-tuning on the Nighttime Pothole Dataset. Over 50 epochs the model the model achieved a 1.6% improvement compared to academic benchmarks.</p>
+								<h3 class="terminal-text-static"><a href="https://github.com/asalee01/Glow-patch">Nighttime Pothole Detection</a></h3>
+								<p class="terminal-text-static">We present a baseline object detector using YOLO and fine-tuning on the Nighttime Pothole Dataset. Over 50 epochs the model the model achieved a 1.6% improvement compared to academic benchmarks.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/thumbs/crash-shell-image.png" class="image fit thumb"><img src="images/thumbs/crash-shell-image.png" alt="" /></a>
-								<h3><a href="#three">Mini Shell</a></h3>
-								<p>A minimal Linux shell in C, implementing command parsing, process creation and synchronous job control</p>
+								<h3 class="terminal-text-static"><a href="#three">Mini Shell</a></h3>
+								<p class="terminal-text-static">A minimal Linux shell in C, implementing command parsing, process creation and synchronous job control</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/thumbs/http-sever-in-c-image.png" class="image fit thumb"><img src="images/thumbs/http-sever-in-c-image.png" alt="" /></a>
-								<h3><a href="https://github.com/Jailior/http-server-c">HTTP Server in C</a></h3>
-								<p>A HTTP server made in C with local scalability and file serving.</p>
+								<h3 class="terminal-text-static"><a href="https://github.com/Jailior/http-server-c">HTTP Server in C</a></h3>
+								<p class="terminal-text-static">A HTTP server made in C with local scalability and file serving.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/thumbs/sand-simulation-wip-image.png" class="image fit thumb"><img src="images/thumbs/sand-simulation-wip-image.png" alt="" /></a>
-								<h3><a href="https://github.com/Jailior/sand-simulation-engine">Sand Simulation Engine - WIP</a></h3>
-								<p>A pixel based physics simulation engine made with OpenGL and C++</p>
+								<h3 class="terminal-text-static"><a href="https://github.com/Jailior/sand-simulation-engine">Sand Simulation Engine - WIP</a></h3>
+								<p class="terminal-text-static">A pixel based physics simulation engine made with OpenGL and C++</p>
 							</article>
 						</div>
 					</section>
 
 				<!-- Three -->
 					<section id="three">
-						<h2>Get In Touch</h2>
-						<p>Looking forward to hearing from you!</p>
+						<h2 class="terminal-text-static"><strong>Get in touch!</strong></h2>
+						<p class="terminal-text-static"><strong>Looking forward to hearing from you!</strong></p>
 						<ul class="actions stacked">
 							<li><strong>Email: </strong><a href="mailto:ahusseinse@yahoo.com">ahusseinse@yahoo.com</a></li>
 							<li><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/ali-osman1/">linkedin.com/in/ali-osman1</a></li>	
