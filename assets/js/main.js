@@ -37,6 +37,61 @@
 			}, 100);
 		});
 
+	// Terminal typing animation
+		function typeTerminalText() {
+			var $terminalText = $('#terminal-text');
+			var $originalText = $('#intro-original');
+			var $cursor = $('#terminal-cursor');
+			
+			if ($terminalText.length && $originalText.length) {
+				// Get the text content, preserving HTML structure for the games-toggle span
+				var originalHTML = $originalText.html();
+				var textToType = $originalText.text();
+				
+				// Store the games-toggle span for later insertion
+				var gamesToggleMatch = originalHTML.match(/<span[^>]*id="games-toggle"[^>]*>games<\/span>/);
+				var gamesToggleHTML = gamesToggleMatch ? gamesToggleMatch[0] : 'games';
+				
+				// Find where "games" appears in the text
+				var gamesIndex = textToType.indexOf('games');
+				
+				$terminalText.html('');
+				var currentIndex = 0;
+				var typingSpeed = 30; // milliseconds per character
+				var currentHTML = '';
+				
+				function typeNextChar() {
+					if (currentIndex < textToType.length) {
+						// Check if we're about to type "games"
+						if (currentIndex === gamesIndex) {
+							// Insert the games-toggle span
+							currentHTML += gamesToggleHTML;
+							$terminalText.html(currentHTML);
+							currentIndex += 5; // Skip past "games"
+						} else {
+							// Add next character
+							currentHTML += textToType[currentIndex];
+							$terminalText.html(currentHTML);
+							currentIndex++;
+						}
+						
+						setTimeout(typeNextChar, typingSpeed);
+					} else {
+						// Typing complete - keep cursor blinking
+						$cursor.addClass('blink');
+					}
+				}
+				
+				// Start typing after a short delay
+				setTimeout(typeNextChar, 500);
+			}
+		}
+		
+		// Initialize terminal typing on page load
+		$window.on('load', function() {
+			typeTerminalText();
+		});
+
 	// Touch?
 		if (browser.mobile) {
 
