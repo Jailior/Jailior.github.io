@@ -88,8 +88,8 @@
             grid[y] = [];
             nextGrid[y] = [];
             for (let x = 0; x < cols; x++) {
-                // Random initial state (about 20% alive)
-                grid[y][x] = Math.random() < 0.2 ? 1 : 0;
+                // only cursor is alive
+                grid[y][x] = 0;
                 nextGrid[y][x] = 0;
             }
         }
@@ -408,14 +408,15 @@
         }
 
         // Toggle red automata mode when clicking "games"
-        const gamesToggle = document.getElementById('games-toggle');
-        if (gamesToggle) {
-            gamesToggle.addEventListener('click', function() {
+        // Use event delegation to handle clicks on games-toggle elements
+        // (both the original in #intro-original and the one created in #terminal-text)
+        document.addEventListener('click', function(e) {
+            if (e.target && e.target.id === 'games-toggle') {
                 RED_USE_GAME_OF_LIFE = !RED_USE_GAME_OF_LIFE;
                 // Reinitialize grid to switch modes
                 initializeGrid();
-            });
-        }
+            }
+        });
     }
 
     // Initialize when DOM is ready
