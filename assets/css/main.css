@@ -2161,7 +2161,7 @@ input, select, textarea {
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
+			background: url("../images/overlay.png");
 			border-radius: 0.35em;
 			content: '';
 			display: block;
@@ -2206,7 +2206,7 @@ input, select, textarea {
 			}
 
 			.image.thumb:hover:before {
-				background: url("images/overlay.png"), url("images/overlay.png");
+				background: url("../images/overlay.png"), url("../images/overlay.png");
 				opacity: 0.5;
 			}
 
@@ -2717,7 +2717,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #0a0e27;
 		background-attachment: scroll;
-		background-image: url("images/overlay.png");
+		background-image: url("../images/overlay.png");
 		background-position: top left;
 		background-repeat: repeat;
 		background-size: auto;
@@ -3229,7 +3229,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #0a0e27;
-				background-image: url("images/overlay.png");
+				background-image: url("../images/overlay.png");
 				background-position: top left;
 				background-repeat: repeat;
 				background-size: auto;
