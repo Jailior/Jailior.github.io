@@ -96,6 +96,25 @@ input, select, textarea {
 		background: #0a0e27;
 	}
 
+	/* Hide scrollbar */
+	html {
+		scrollbar-width: none; /* Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+	}
+
+	html::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera */
+	}
+
+	body {
+		scrollbar-width: none; /* Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+	}
+
+	body::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera */
+	}
+
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -2795,7 +2814,6 @@ input, select, textarea {
 	}
 
 		#main > section {
-			border-top: solid 2px #1a2340;
 			margin: 4em 0 0 0;
 			padding: 4em 0 0 0;
 		}
