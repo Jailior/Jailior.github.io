@@ -261,7 +261,7 @@ input, select, textarea {
 
 /* Terminal Intro */
 	.terminal-intro {
-		background: #000000;
+		background: #0d1117;
 		border: 2px solid #00ffff;
 		border-radius: 0.35em;
 		font-family: 'JetBrains Mono Nerd Font', 'FiraCode Nerd Font', 'Hack Nerd Font', 'MesloLGS Nerd Font', 'CaskaydiaCove Nerd Font', 'Nerd Font Mono', 'Fira Code', 'Source Code Pro', 'Cascadia Code', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
@@ -2766,6 +2766,8 @@ input, select, textarea {
 		#header .image.avatar {
 			margin: 0 0 1em 0;
 			width: 6.25em;
+			border: 2px solid #00ffff;
+			padding: 0px;
 		}
 
 /* Footer */
