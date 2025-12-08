@@ -1,5 +1,15 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap");
+
+/* Nerd Fonts Mono - JetBrains Mono Nerd Font */
+@font-face {
+	font-family: 'JetBrains Mono Nerd Font';
+	src: url('https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@3.2.1/patched-fonts/JetBrainsMono/Ligatures/Regular/complete/JetBrains%20Mono%20Regular%20Nerd%20Font%20Complete%20Mono.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
 
 /*
 	Strata by HTML5 UP
@@ -235,7 +245,7 @@ input, select, textarea {
 		background: #000000;
 		border: 2px solid #00ffff;
 		border-radius: 0.35em;
-		font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+		font-family: 'JetBrains Mono Nerd Font', 'FiraCode Nerd Font', 'Hack Nerd Font', 'MesloLGS Nerd Font', 'CaskaydiaCove Nerd Font', 'Nerd Font Mono', 'Fira Code', 'Source Code Pro', 'Cascadia Code', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
 		font-size: 0.95em;
 		line-height: 1.75em;
 		margin: 0 0 2em 0;
@@ -278,28 +288,28 @@ input, select, textarea {
 /* Terminal Text Static (no animation) */
 	.terminal-text-static {
 		color: #00ffff;
-		font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+		font-family: 'JetBrains Mono Nerd Font', 'FiraCode Nerd Font', 'Hack Nerd Font', 'MesloLGS Nerd Font', 'CaskaydiaCove Nerd Font', 'Nerd Font Mono', 'Fira Code', 'Source Code Pro', 'Cascadia Code', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
 	}
 
 	#header h1.terminal-text-static {
 		color: #00ffff;
-		font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+		font-family: 'JetBrains Mono Nerd Font', 'FiraCode Nerd Font', 'Hack Nerd Font', 'MesloLGS Nerd Font', 'CaskaydiaCove Nerd Font', 'Nerd Font Mono', 'Fira Code', 'Source Code Pro', 'Cascadia Code', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
 	}
 
 	#header h2.terminal-text-static {
 		color: #ffffff;
-		font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+		font-family: 'JetBrains Mono Nerd Font', 'FiraCode Nerd Font', 'Hack Nerd Font', 'MesloLGS Nerd Font', 'CaskaydiaCove Nerd Font', 'Nerd Font Mono', 'Fira Code', 'Source Code Pro', 'Cascadia Code', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
 	}
 
 	#header h4.terminal-text-static {
 		color: #00ffff;
-		font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+		font-family: 'JetBrains Mono Nerd Font', 'FiraCode Nerd Font', 'Hack Nerd Font', 'MesloLGS Nerd Font', 'CaskaydiaCove Nerd Font', 'Nerd Font Mono', 'Fira Code', 'Source Code Pro', 'Cascadia Code', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
 	}
 
 	.work-item h3.terminal-text-static,
 	.work-item h3.terminal-text-static a {
 		color: #00ffff;
-		font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+		font-family: 'JetBrains Mono Nerd Font', 'FiraCode Nerd Font', 'Hack Nerd Font', 'MesloLGS Nerd Font', 'CaskaydiaCove Nerd Font', 'Nerd Font Mono', 'Fira Code', 'Source Code Pro', 'Cascadia Code', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
 	}
 
 	.work-item h3.terminal-text-static a:hover {
@@ -309,7 +319,7 @@ input, select, textarea {
 
 	.work-item p.terminal-text-static {
 		color: #00ffff;
-		font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+		font-family: 'JetBrains Mono Nerd Font', 'FiraCode Nerd Font', 'Hack Nerd Font', 'MesloLGS Nerd Font', 'CaskaydiaCove Nerd Font', 'Nerd Font Mono', 'Fira Code', 'Source Code Pro', 'Cascadia Code', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
 	}
 
 	.align-left {
