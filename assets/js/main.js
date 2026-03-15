@@ -37,59 +37,24 @@
 			}, 100);
 		});
 
-	// Terminal typing animation
-		function typeTerminalText() {
-			var $terminalText = $('#terminal-text');
-			var $originalText = $('#intro-original');
-			var $cursor = $('#terminal-cursor');
-			
-			if ($terminalText.length && $originalText.length) {
-				// Get the text content, preserving HTML structure for the games-toggle span
-				var originalHTML = $originalText.html();
-				var textToType = $originalText.text();
-				
-				// Store the games-toggle span for later insertion
-				var gamesToggleMatch = originalHTML.match(/<span[^>]*id="games-toggle"[^>]*>games<\/span>/);
-				var gamesToggleHTML = gamesToggleMatch ? gamesToggleMatch[0] : 'games';
-				
-				// Find where "games" appears in the text
-				var gamesIndex = textToType.indexOf('games');
-				
-				$terminalText.html('');
-				var currentIndex = 0;
-				var typingSpeed = 30; // milliseconds per character
-				var currentHTML = '';
-				
-				function typeNextChar() {
-					if (currentIndex < textToType.length) {
-						// Check if we're about to type "games"
-						if (currentIndex === gamesIndex) {
-							// Insert the games-toggle span
-							currentHTML += gamesToggleHTML;
-							$terminalText.html(currentHTML);
-							currentIndex += 5; // Skip past "games"
-						} else {
-							// Add next character
-							currentHTML += textToType[currentIndex];
-							$terminalText.html(currentHTML);
-							currentIndex++;
-						}
-						
-						setTimeout(typeNextChar, typingSpeed);
-					} else {
-						// Typing complete - keep cursor blinking
-						$cursor.addClass('blink');
-					}
-				}
-				
-				// Start typing after a short delay
-				setTimeout(typeNextChar, 500);
-			}
-		}
-		
-		// Initialize terminal typing on page load
+	// Scroll-in animation for sections.
 		$window.on('load', function() {
-			typeTerminalText();
+			var sections = document.querySelectorAll('#main .section-animate');
+			if (!sections.length) return;
+			var observer = new IntersectionObserver(function(entries) {
+				entries.forEach(function(entry) {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('in-view');
+						observer.unobserve(entry.target);
+					}
+				});
+			}, {
+				rootMargin: '0px 0px -40px 0px',
+				threshold: 0
+			});
+			sections.forEach(function(section) {
+				observer.observe(section);
+			});
 		});
 
 	// Touch?
@@ -147,26 +112,5 @@
 				});
 
 			}
-
-	// Main Sections: Two.
-
-		// Lightbox gallery.
-			$window.on('load', function() {
-
-				$('#two').poptrox({
-					caption: function($a) { return $a.next('h3').text(); },
-					overlayColor: '#2c2c2c',
-					overlayOpacity: 0.85,
-					popupCloserText: '',
-					popupLoaderText: '',
-					selector: '.work-item a.image',
-					usePopupCaption: true,
-					usePopupDefaultStyling: false,
-					usePopupEasyClose: false,
-					usePopupNav: true,
-					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-				});
-
-			});
 
 })(jQuery);

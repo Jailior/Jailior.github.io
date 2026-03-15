@@ -9,82 +9,88 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Cellular Automata Canvas -->
-		<canvas id="cellular-automata-canvas"></canvas>
-
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h4 class="terminal-text-static">
-						<strong>I'm Ali</strong>, CE Student @ UBC
-					</h4>
-					<h4 class="terminal-text-static">
-						I like building cool things
-				    </h4>
+					<h2><strong>Ali Osman</strong>
+						<br>CompE Student @ UBC</h2>
+					<p>I like learning.</p>
 				</div>
 			</header>
 
 		<!-- Main -->
 			<div id="main">
 
-				<!-- One -->
-					<section id="one">
+				<!-- One: Intro -->
+					<section id="one" class="section-animate">
 						<header class="major">
-							<h2 class="terminal-text-static"><strong>Welcome to my Portfolio!</strong></h2>
+							<h2>Hi, welcome to my portfolio.</h2>
 						</header>
-						<div class="terminal-intro" id="terminal-intro">
-							<span class="terminal-prompt">root@ali $ </span><span class="terminal-text" id="terminal-text"></span><span class="terminal-cursor blink" id="terminal-cursor"></span>
-						</div>
-						<p style="display: none;" id="intro-original">I am a computer engineering student at the University of British Columbia 
-							and I have a passion for software and firmware development. I like building projects in
-							 software, machine learning, computer architecture, <span class="terminal-prompt" id="games-toggle" style="cursor: pointer; text-decoration: underline;">games</span> and embedded systems.</p>
+						<p class="intro-text">I'm a computer engineering student at the University of British Columbia with a passion for software and firmware development. I enjoy building projects across software, machine learning, computer architecture, and embedded systems.</p>
 					</section>
 
-				<!-- Two -->
-					<section id="two">
-						<h2 class="terminal-text-static"><strong>Recent Projects</strong></h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/thumbs/open-search-image.png" class="image fit thumb"><img src="images/thumbs/open-search-image.png" alt="" /></a>
-								<h3 class="terminal-text-static"><a href="https://opensearchengine.app/">OpenSearch</a></h3>
-								<p class="terminal-text-static"><strong>A distributed web search engine that follows the Google search architecture including crawling, indexing and querying.</strong></p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/thumbs/door-sense-gui-image.png" class="image fit thumb"><img src="images/thumbs/door-sense-gui-image.png" alt="" /></a>
-								<h3 class="terminal-text-static"><a href="https://github.com/Jailior/DoorSense">Door Monitoring System</a></h3>
-								<p class="terminal-text-static"><strong>Using an ESP32-CAM module to monitor an image frame and perform edge detection where readings streamed via TCP to a C++ server.</strong></p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/thumbs/glow-patch-embeddings.png" class="image fit thumb"><img src="images/thumbs/glow-patch-embeddings.png" alt="" /></a>
-								<h3 class="terminal-text-static"><a href="https://github.com/asalee01/Glow-patch">Nighttime Pothole Detection</a></h3>
-								<p class="terminal-text-static"><strong>We present a baseline object detector using YOLO and fine-tuning on the Nighttime Pothole Dataset. Over 50 epochs the model the model achieved a 1.6% improvement compared to academic benchmarks.</strong></p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/thumbs/crash-shell-image.png" class="image fit thumb"><img src="images/thumbs/crash-shell-image.png" alt="" /></a>
-								<h3 class="terminal-text-static"><a href="#three">Mini Shell</a></h3>
-								<p class="terminal-text-static"><strong>A minimal Linux shell in C, implementing command parsing, process creation and synchronous job control</strong></p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/thumbs/http-sever-in-c-image.png" class="image fit thumb"><img src="images/thumbs/http-sever-in-c-image.png" alt="" /></a>
-								<h3 class="terminal-text-static"><a href="https://github.com/Jailior/http-server-c">HTTP Server in C</a></h3>
-								<p class="terminal-text-static"><strong>A HTTP server made in C with local scalability and file serving.</strong></p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/thumbs/sand-simulation-wip-image.png" class="image fit thumb"><img src="images/thumbs/sand-simulation-wip-image.png" alt="" /></a>
-								<h3 class="terminal-text-static"><a href="https://github.com/Jailior/sand-simulation-engine">Sand Simulation Engine - WIP</a></h3>
-								<p class="terminal-text-static"><strong>A pixel based physics simulation engine made with OpenGL and C++</strong></p>
-							</article>
+				<!-- Resume: Education & Experience -->
+					<section id="resume" class="section-animate">
+						<div class="resume-block">
+							<h3>Education</h3>
+							<ul class="resume-list">
+								<li>
+									<strong>University of British Columbia</strong> — BASc. in Computer Engineering<br>
+									<span class="resume-meta">2023 – Present · Vancouver, BC</span><br>
+									<span class="resume-meta">Relevant Coursework: Data Structures & Algorithms, Software Construction, Computer Systems</span>
+								</li>
+								<!-- Add more entries as needed -->
+							</ul>
+						</div>
+						<div class="resume-block">
+							<h3>Experience</h3>
+							<ul class="resume-list">
+								<li>
+									<strong>Firmware Test Engineer Intern</strong> — Motorola Solutions<br>
+									<span class="resume-meta">Sep. 2025 – Present · Vancouver, BC</span><br>
+									Developed and scaled test automation for Avigilon security cameras.
+								</li>
+								<li>
+									<strong>Firmware Developer</strong> — UBC Orbit - Student Satellite Team<br>
+									<span class="resume-meta">Jan. 2026 – Present · Vancouver, BC</span><br>
+									Developing on-board firmware for the ALEASAT 1U CubeSat.
+								</li>
+								<!-- Add more entries as needed -->
+							</ul>
 						</div>
 					</section>
 
-				<!-- Three -->
-					<section id="three">
-						<h2 class="terminal-text-static"><strong>Get in touch!</strong></h2>
-						<p class="terminal-text-static"><strong>Looking forward to hearing from you!</strong></p>
+				<!-- Two: Projects -->
+					<section id="two" class="section-animate">
+						<h2>Projects</h2>
+						<ul class="project-list">
+							<li class="project-item">
+								<h3><a href="https://github.com/Jailior/open-search">OpenSearch</a></h3>
+								<p>A distributed web search engine that follows the Google search architecture including crawling, indexing and querying.</p>
+							</li>
+							<li class="project-item">
+								<h3><a href="https://github.com/Jailior/DoorSense">Door Monitoring System</a></h3>
+								<p>Using an ESP32-CAM module to monitor an image frame and perform edge detection where readings streamed via TCP to a C++ server.</p>
+							</li>
+							<li class="project-item">
+								<h3><a href="https://github.com/asalee01/Glow-patch">Nighttime Pothole Detection</a></h3>
+								<p>We present a baseline object detector using YOLO and fine-tuning on the Nighttime Pothole Dataset. Over 50 epochs the model achieved a 1.6% improvement compared to academic benchmarks.</p>
+							</li>
+							<li class="project-item">
+								<h3><a href="https://devpost.com/software/the-brainrot-times">Automated AI Content Generator</a></h3>
+								<p>Think doomscrolling turned informative, we transform breaking news into viral short-form video reels. Fully autonomous, content generation reimagining news for the TikTok generation.</p>
+							</li>
+						</ul>
+					</section>
+
+				<!-- Three: Contact -->
+					<section id="three" class="section-animate">
+						<h2>Get in touch</h2>
+						<p>I'm always open to discussing new ideas and opportunities, feel free to reach out to me!</p>
 						<ul class="actions stacked">
-							<li class="terminal-text-static"><strong>Email: </strong><a href="mailto:ahusseinse@yahoo.com">ahusseinse@yahoo.com</a></li>
-							<li class="terminal-text-static"><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/ali-osman1/">linkedin.com/in/ali-osman1</a></li>	
+							<li><strong>Email:</strong> ahusseinse[at]yahoo[dot]com</li>
+							<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ali-osman1/">linkedin.com/in/ali-osman1</a></li>
 						</ul>
 					</section>
 
@@ -404,6 +410,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<ul class="icons">
 						<li><a href="https://www.github.com/Jailior" class="icon brands fa-github"><span class="label">Github</span></a></li>
 						<li><a href="https://www.linkedin.com/in/ali-osman1/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://x.com/aosman_42" class="icon brands fa-twitter"><span class="label">X</span></a></li>
 						<li><a href="mailto:ahusseinse@yahoo.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
                 	</ul>
 				</div>
@@ -411,12 +418,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/cellular-automata.js"></script>
 
 	</body>
 </html>
