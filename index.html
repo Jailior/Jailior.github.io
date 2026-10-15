@@ -1,427 +1,179 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Ali Osman's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/favicon.svg" type="image/svg+xml" sizes="any" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Ali Osman</title>
+	<meta name="description" content="Ali Osman, Computer Engineering at the University of British Columbia. Systems software, firmware, and digital design." />
+	<meta property="og:title" content="Ali Osman" />
+	<meta property="og:description" content="Computer Engineering at the University of British Columbia. Systems software, firmware, and digital design." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://jailior.github.io/" />
+	<meta property="og:image" content="https://jailior.github.io/images/avatar.jpg" />
+	<link rel="icon" href="images/favicon.svg" type="image/svg+xml" sizes="any" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<script>
+		try {
+			var savedTheme = localStorage.getItem('theme');
+			if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
+		} catch (e) {}
+	</script>
+</head>
+<body>
+	<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme">
+		<svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" /></svg>
+		<svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>
+	</button>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h2><strong>Ali Osman</strong>
-						<br>CompE Student @ UBC</h2>
-					<p>I like learning.</p>
-				</div>
-			</header>
+	<main class="page">
 
-		<!-- Main -->
-			<div id="main">
-
-				<!-- One: Intro -->
-					<section id="one" class="section-animate">
-						<header class="major">
-							<h2>Hi, welcome to my portfolio.</h2>
-						</header>
-						<p class="intro-text">I'm a computer engineering student at the University of British Columbia with a passion for software and firmware development. I enjoy building projects across software, machine learning, computer architecture, and embedded systems.</p>
-					</section>
-
-				<!-- Resume: Education & Experience -->
-					<section id="resume" class="section-animate">
-						<div class="resume-block">
-							<h3>Education</h3>
-							<ul class="resume-list">
-								<li>
-									<strong>University of British Columbia</strong> — BASc. in Computer Engineering<br>
-									<span class="resume-meta">2023 – Present · Vancouver, BC</span><br>
-									<span class="resume-meta">Relevant Coursework: Data Structures & Algorithms, Software Construction, Computer Systems</span>
-								</li>
-								<!-- Add more entries as needed -->
-							</ul>
-						</div>
-						<div class="resume-block">
-							<h3>Experience</h3>
-							<ul class="resume-list">
-								<li>
-									<strong>Firmware Test Engineer Intern</strong> — Motorola Solutions<br>
-									<span class="resume-meta">Sep. 2025 – Present · Vancouver, BC</span><br>
-									Developed and scaled test automation for Avigilon security cameras.
-								</li>
-								<li>
-									<strong>Firmware Developer</strong> — UBC Orbit - Student Satellite Team<br>
-									<span class="resume-meta">Jan. 2026 – Present · Vancouver, BC</span><br>
-									Developing on-board firmware for the ALEASAT 1U CubeSat.
-								</li>
-								<!-- Add more entries as needed -->
-							</ul>
-						</div>
-					</section>
-
-				<!-- Two: Projects -->
-					<section id="two" class="section-animate">
-						<h2>Projects</h2>
-						<ul class="project-list">
-							<li class="project-item">
-								<h3><a href="https://github.com/Jailior/open-search">OpenSearch</a></h3>
-								<p>A distributed web search engine that follows the Google search architecture including crawling, indexing and querying.</p>
-							</li>
-							<li class="project-item">
-								<h3><a href="https://github.com/Jailior/DoorSense">Door Monitoring System</a></h3>
-								<p>Using an ESP32-CAM module to monitor an image frame and perform edge detection where readings streamed via TCP to a C++ server.</p>
-							</li>
-							<li class="project-item">
-								<h3><a href="https://github.com/asalee01/Glow-patch">Nighttime Pothole Detection</a></h3>
-								<p>We present a baseline object detector using YOLO and fine-tuning on the Nighttime Pothole Dataset. Over 50 epochs the model achieved a 1.6% improvement compared to academic benchmarks.</p>
-							</li>
-							<li class="project-item">
-								<h3><a href="https://devpost.com/software/the-brainrot-times">Automated AI Content Generator</a></h3>
-								<p>Think doomscrolling turned informative, we transform breaking news into viral short-form video reels. Fully autonomous, content generation reimagining news for the TikTok generation.</p>
-							</li>
-						</ul>
-					</section>
-
-				<!-- Three: Contact -->
-					<section id="three" class="section-animate">
-						<h2>Get in touch</h2>
-						<p>I'm always open to discussing new ideas and opportunities, feel free to reach out to me!</p>
-						<ul class="actions stacked">
-							<li><strong>Email:</strong> ahusseinse[at]yahoo[dot]com</li>
-							<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ali-osman1/">linkedin.com/in/ali-osman1</a></li>
-						</ul>
-					</section>
-
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-					</section>
-				-->
-
+		<!-- Intro -->
+		<header class="intro">
+			<div class="photo">
+				<img src="images/avatar.jpg" alt="Photo of Ali Osman on a mountain summit" />
 			</div>
+			<div class="intro-text">
+				<h1>Ali Osman</h1>
+				<p>
+					I'm a Computer Engineering undergraduate at the
+					<a href="https://www.ubc.ca/">University of British Columbia</a>.
+					I enjoy working on systems across software and hardware.
+					I've worked on a cloud storage backend at AWS and flight software for small satellites.
+					My current interests are in operating systems, digital design, and computer architecture for ML workloads.
+				</p>
+				<p>
+					I currently lead the Command &amp; Data Handling team at <a href="https://www.ubcorbit.com/">UBC Orbit</a>, a student satellite design team,
+					and am a teaching assistant for CPEN 221 (Software Construction).
+				</p>
+				<p class="links">
+					<span class="email">aosman08 [at] student [dot] ubc [dot] ca</span>
+					<span class="sep">&middot;</span>
+					<a href="https://github.com/Jailior">GitHub</a>
+					<span class="sep">&middot;</span>
+					<a href="https://www.linkedin.com/in/ali-osman1/">LinkedIn</a>
+				</p>
+			</div>
+		</header>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.github.com/Jailior" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/ali-osman1/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://x.com/aosman_42" class="icon brands fa-twitter"><span class="label">X</span></a></li>
-						<li><a href="mailto:ahusseinse@yahoo.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                	</ul>
+		<!-- News -->
+		<section id="news">
+			<h2>News</h2>
+			<ul class="news">
+				<li><span class="date">Sep 2026</span><span>Teaching Assistant for CPEN 221: Software Construction at UBC.</span></li>
+				<li><span class="date">May 2026</span><span>Joined the Amazon Web Services SQS backend team as a Software Development Engineer intern.</span></li>
+				<li><span class="date">Jan 2026</span><span>Started leading the Command &amp; Data Handling team at UBC Orbit.</span></li>
+				<li><span class="date">Sep 2025</span><span>Joined Motorola Solutions as a Firmware Test Engineer intern.</span></li>
+			</ul>
+		</section>
+
+		<!-- Education -->
+		<section id="education">
+			<h2>Education</h2>
+			<div class="entry">
+				<div class="entry-head">
+					<span><strong>University of British Columbia</strong>, BASc in Computer Engineering</span>
+					<span class="date">2023 &ndash; 2028 (expected)</span>
 				</div>
-			</footer>
+				<p>Coursework: Operating Systems, Distributed Systems, Digital Systems Design, Databases, Networking.</p>
+			</div>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Experience -->
+		<section id="experience">
+			<h2>Experience</h2>
+			<div class="entry">
+				<div class="entry-head">
+					<span><strong>Software Development Engineer Intern</strong>, Amazon Web Services (SQS Backend)</span>
+					<span class="date">May &ndash; Aug 2026</span>
+				</div>
+				<p>Capacity modeling and dynamic resource allocation for the SQS storage backend.</p>
+			</div>
+			<div class="entry">
+				<div class="entry-head">
+					<span><strong>Command &amp; Data Handling Team Lead</strong>, <a href="https://www.ubcorbit.com/">UBC Orbit</a> Student Satellite Team</span>
+					<span class="date">Jan 2026 &ndash; present</span>
+				</div>
+				<p>Leading a team of three on C flight software for a CubeSat on FreeRTOS (TI TMS570), including the command transport and retransmission protocol between the on-board computer and the ground station.</p>
+			</div>
+			<div class="entry">
+				<div class="entry-head">
+					<span><strong>Firmware Test Engineer Intern</strong>, Motorola Solutions</span>
+					<span class="date">Sep 2025 &ndash; Apr 2026</span>
+				</div>
+				<p>Test automation and firmware debugging for embedded Linux IP security cameras.</p>
+			</div>
+		</section>
 
-	</body>
+		<!-- Teaching -->
+		<section id="teaching">
+			<h2>Teaching</h2>
+			<div class="entry">
+				<div class="entry-head">
+					<span><strong>Teaching Assistant</strong>, CPEN 221: Software Construction, UBC</span>
+					<span class="date">Fall 2026</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section id="projects">
+			<h2>Projects</h2>
+			<div class="project">
+				<img class="thumb" src="images/thumbs/open-search-image.png" alt="Search results page of the distributed search engine" width="160" height="120" />
+				<div>
+					<h3>Distributed Search Engine</h3>
+					<p class="tech">Go &middot; Redis &middot; MongoDB</p>
+					<p>A crawl, index, rank, and serve pipeline whose parallel goroutine worker pools coordinate through Redis queues. It ranks over 50,000 indexed pages by blending TF-IDF and PageRank.</p>
+					<p class="project-links"><a href="https://github.com/Jailior/open-search">code</a></p>
+				</div>
+			</div>
+			<div class="project">
+				<img class="thumb" src="images/thumbs/risc-cpu.svg" alt="Block diagram of the CPU datapath" width="160" height="120" />
+				<div>
+					<h3>16-bit RISC CPU</h3>
+					<p class="tech">SystemVerilog &middot; Quartus &middot; ModelSim</p>
+					<p>A multi-cycle CPU for a 9-instruction ARM-style ISA, built from a register-file, shifter, and ALU datapath with an FSM controller, on-chip RAM, and memory-mapped I/O. It runs assembled programs on a Cyclone V FPGA at 167 MHz and is verified at RTL and gate level.</p>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<p>Last updated October 2026. Design inspired by <a href="https://jonbarron.info/">Jon Barron's website</a>.</p>
+		</footer>
+
+	</main>
+
+	<script>
+		(function () {
+			var root = document.documentElement;
+			var button = document.getElementById('theme-toggle');
+			var systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+			function currentTheme() {
+				return root.getAttribute('data-theme') || (systemDark.matches ? 'dark' : 'light');
+			}
+
+			function syncButton() {
+				var theme = currentTheme();
+				var label = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+				button.setAttribute('data-mode', theme);
+				button.setAttribute('aria-label', label);
+				button.title = label;
+			}
+
+			button.addEventListener('click', function () {
+				var next = currentTheme() === 'dark' ? 'light' : 'dark';
+				root.setAttribute('data-theme', next);
+				try { localStorage.setItem('theme', next); } catch (e) {}
+				syncButton();
+			});
+
+			if (systemDark.addEventListener) systemDark.addEventListener('change', syncButton);
+			syncButton();
+		})();
+	</script>
+</body>
 </html>
