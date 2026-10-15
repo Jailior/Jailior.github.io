@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" width="320" height="240" font-family="Helvetica, Arial, sans-serif">
+	<defs>
+		<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+			<path d="M0,0 L10,5 L0,10 z" fill="#555" />
+		</marker>
+	</defs>
+	<rect width="320" height="240" fill="#ffffff" />
+
+	<!-- Controller -->
+	<rect x="20" y="16" width="280" height="36" rx="4" fill="#fdf1e3" stroke="#d9822b" stroke-width="1.5" />
+	<text x="160" y="39" font-size="14" text-anchor="middle" fill="#7a4410">FSM controller</text>
+
+	<!-- Control lines -->
+	<g stroke="#d9822b" stroke-width="1" stroke-dasharray="3 3">
+		<line x1="56" y1="52" x2="56" y2="82" />
+		<line x1="160" y1="52" x2="160" y2="82" />
+		<line x1="262" y1="52" x2="262" y2="82" />
+	</g>
+
+	<!-- Datapath -->
+	<g stroke="#1772d0" stroke-width="1.5" fill="#e8f1fb">
+		<rect x="20" y="82" width="72" height="64" rx="4" />
+		<rect x="124" y="82" width="72" height="64" rx="4" />
+		<path d="M228,82 L300,98 L300,130 L228,146 L228,124 L240,114 L228,104 Z" />
+	</g>
+	<g font-size="13" text-anchor="middle" fill="#0d3f73">
+		<text x="56" y="110">Register</text>
+		<text x="56" y="126">file</text>
+		<text x="160" y="118">Shifter</text>
+		<text x="268" y="118">ALU</text>
+	</g>
+	<g stroke="#555" stroke-width="1.5" fill="none">
+		<line x1="92" y1="114" x2="122" y2="114" marker-end="url(#arrow)" />
+		<line x1="196" y1="114" x2="226" y2="114" marker-end="url(#arrow)" />
+		<path d="M300,114 L310,114 L310,160 L56,160 L56,148" marker-end="url(#arrow)" />
+	</g>
+
+	<!-- Memory and I/O -->
+	<g stroke="#555" stroke-width="1.5" fill="#f2f2f2">
+		<rect x="20" y="180" width="72" height="44" rx="4" />
+		<rect x="124" y="180" width="72" height="44" rx="4" />
+		<rect x="228" y="180" width="72" height="44" rx="4" />
+	</g>
+	<g font-size="13" text-anchor="middle" fill="#333">
+		<text x="56" y="207">PC</text>
+		<text x="160" y="207">RAM</text>
+		<text x="264" y="207">I/O</text>
+	</g>
+	<g stroke="#555" stroke-width="1.5" fill="none">
+		<line x1="92" y1="202" x2="122" y2="202" marker-end="url(#arrow)" />
+		<line x1="196" y1="202" x2="226" y2="202" marker-start="url(#arrow)" marker-end="url(#arrow)" />
+	</g>
+</svg>
